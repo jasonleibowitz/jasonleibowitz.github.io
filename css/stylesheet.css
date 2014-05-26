@@ -1,0 +1,272 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-sarif;
+  color: #FFFFFF;
+  background-color: white;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.center-align {
+  text-align: center;
+}
+
+#navigation {
+  position: fixed;
+  list-style: none;
+  display: inline;
+  color: #000000;
+  z-index: 10;
+  right: 0;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#navigation li{
+  display: inline;
+  font-size: 18px;
+  font-family: "Helvetica-Neue", Helvetica;
+  margin-right: 15px;
+}
+
+#navigation a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.intro {
+  /*position: fixed;*/
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  text-align: center;
+  color: #fff;
+  background: url(../images/mist_football.jpg) no-repeat bottom center scroll;
+  background-color: #FDF2D8;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+      background-size: cover;
+        -o-background-size: cover;
+}
+
+.intro body {
+  height: 100%;
+  width: 100%;
+}
+
+.intro h1 {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font-size: 30pt;
+  font-weight: 700;
+}
+
+.sm-icons img{
+  width: 50px;
+  margin: 25px;
+}
+
+.sm-icon {
+  color: #D7D7D7;
+}
+
+.contact-icons {
+  text-align: center;
+}
+
+.contact-icons img{
+  width: 80px;
+  margin: 25px;
+  text-align: center;
+}
+
+.contact-icons a:hover {
+  color: white;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: black;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    border: 1px solid white;
+    outline: 0;
+    color: white;
+    background-color: red;
+}
+
+.sm-icon a:hover {
+  -ms-transform:rotate(7deg); /* IE 9 */
+  -webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+  transform: rotate(360deg);
+}
+
+img.headshot {
+  /*position: absolute;*/
+  width: 1000px;
+  margin-left: -400px;
+}
+
+.headshot-wrap {
+  width: 200px;
+  height: 200px;
+  overflow:hidden;
+  border-radius: 100%;
+  border: 3px solid black;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: red;
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding-top: 50px;
+}
+
+.about h1 {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.portfolio {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  padding-top: 50px;
+}
+
+.portfolio h1 {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.portfolio img{
+  width: 400px;
+}
+
+.portfolio p{
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-size: 10.5pt;
+}
+
+.portfolio-project {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-top: 50px;
+}
+
+.contact h1 {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  text-align: center;
+  color: #000000;
+}
+
+.contact h4 {
+  color: #000000;
+}
+
+/*@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+}
+*/
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: red;
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}

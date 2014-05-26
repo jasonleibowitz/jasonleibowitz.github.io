@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title>Jason Leibowitz</title>
+<script src="/js/jquery-1.10.2.js"></script>
+	<link href="/css/style.css" rel="stylesheet">
+<body>
+<img id="profile" src="/img/headshot.png" height="180px"></img>
+<p>Me, elsewhere. </p>
+<br />
+<div class="socialwrap">
+	<div class="smi">
+	<a href="https://www.facebook.com/jasonaleibowitz" target=_blank><img class ="social facebook" src="/img/facebook_black.png" alt="facebook icon"></img></a> &nbsp; &nbsp;
+
+	<a href="https://twitter.com/jasonleibowitz" target=_blank><img class ="social twitter" src="/img/twitter_black.png" alt="twitter icon"></img></a>&nbsp; &nbsp;
+
+	<a href="http://jasonleibowitz.tumblr.com" target=_blank><img class ="social tumblr" src="/img/tumblr_black.png" alt="tumblr icon"></img></a>&nbsp; &nbsp;
+
+	<a href="http://www.linkedin.com/in/jasonleibowitz/" target=_blank><img class ="social linkedin" src="/img/linkedin_black.png" alt="linkedin icon"></img></a>&nbsp; &nbsp;
+
+	<a href="http://instagram.com/jasonleibowitz" target=_blank><img class ="social instagram" src="/img/instagram_black.png" alt="instagram icon"></img></a>
+	</div></div>
+
+	<script>
+	$('.facebook')
+		.mouseover(function() {
+			$("#profile").attr("src", "img/facebookprofile.png");
+		})
+		.mouseout(function() {
+			$("#profile").attr("src", "img/headshot.png");
+		})
+
+	$('.twitter')
+		.mouseover(function() {
+			$("#profile").attr("src", "img/twitterprofile.png");
+		})
+		.mouseout(function() {
+			$("#profile").attr("src", "img/headshot.png");
+		})		
+
+	$('.tumblr')
+		.mouseover(function() {
+			$("#profile").attr("src", "img/tumblrprofile.png");
+		})
+		.mouseout(function() {
+			$("#profile").attr("src", "img/headshot.png");
+		})		
+
+	$('.linkedin')
+		.mouseover(function() {
+			$("#profile").attr("src", "img/linkedinprofile.png");
+		})
+		.mouseout(function() {
+			$("#profile").attr("src", "img/headshot.png");
+		})	
+
+	$('.instagram')
+		.mouseover(function() {
+			$("#profile").attr("src", "img/instagramprofile.png");
+		})
+		.mouseout(function() {
+			$("#profile").attr("src", "img/headshot.png");
+		})	
+
+</script>

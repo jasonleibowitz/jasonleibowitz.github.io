@@ -1,0 +1,39 @@
+html {
+	height: 100%;
+}
+body {
+	text-align: center;
+	background: url(/img/mistfootball.jpg) no-repeat center center fixed;
+	background-size: cover !important;
+	color: black;
+	font-family: helvetica;
+}
+#profile {
+	border-radius: 50%;
+	border: 3px solid black;
+	margin: 50px 0 20px 0;
+}
+.social {
+	height: 80px;
+}
+p {
+	font-size: 24px;
+	font-family: helvetica;
+	color: black;
+}
+.facebook:hover {
+	content:url("/img/facebook_blue.png");
+}
+.twitter:hover {
+	content:url("/img/twitter_blue.png");
+}
+.tumblr:hover {
+	content:url("/img/tumblr_blue.png");
+}
+.linkedin:hover {
+	content:url("/img/linkedin_blue.png");
+}
+.instagram:hover {
+	content:url("/img/instagram_color.png");
+}
+}
