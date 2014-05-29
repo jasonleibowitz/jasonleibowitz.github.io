@@ -45,6 +45,28 @@ $(document).ready(function () {
       } else {
           $(".navbar-fixed-top").removeClass("top-nav-collapse");
       }
+
+    $(window).resize(function(){
+       console.log('resize called');
+       var width = $(window).width();
+       if(width >= 320 && width <= 568){
+           $('.fa-twitter').removeClass('fa-4x').addClass('fa-2x');
+           $('.twitter').removeClass('col-md-1').addClass('col-xs-1');
+           $('.twitter').removeClass('col-md-offset-4');
+           $('.fa-instagram').removeClass('fa-4x').addClass('fa-2x');
+           $('.instagram').removeClass('col-md-1').addClass('col-xs-1');
+           $('.fa-linkedin-square').removeClass('fa-4x').addClass('fa-2x');
+           $('.linkedin').removeClass('col-md-1').addClass('col-xs-1');
+           $('.fa-github').removeClass('fa-4x').addClass('fa-2x');
+           $('.github').removeClass('col-md-1').addClass('col-xs-1');
+           $('.fa-envelope-o').removeClass('fa-4x').addClass('fa-2x');
+           $('.fa-linkedin').removeClass('fa-4x').addClass('fa-2x');
+           $('.fa-file-text-o').removeClass('fa-4x').addClass('fa-2x');
+
+       }
+    })
+    .resize();//trigger the resize event on page load.
+
 });
 
 

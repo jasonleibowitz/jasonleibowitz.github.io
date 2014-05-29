@@ -70,6 +70,10 @@ p {
   font-weight: 700;
 }
 
+.title {
+  margin-bottom: 25px;
+}
+
 .sm-icons img{
   width: 50px;
   margin: 25px;
@@ -136,7 +140,7 @@ img.headshot {
 
 .about {
   width: 100%;
-  height: auto;
+  height: 100%;
   color: #000000;
   background-color: #FFFFFF;
   padding-top: 50px;
@@ -186,6 +190,10 @@ img.headshot {
 
 .portfolio-project {
   text-align: center;
+  margin-bottom: -10px;
+}
+
+.source-code {
   margin-bottom: 25px;
 }
 
@@ -279,4 +287,127 @@ img.headshot {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+
+  #landscape {visibility:hidden; }
+  #rotateplease {visibility:hidden; }
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  img.headshot {
+  /*position: absolute;*/
+  width: 500px;
+  margin-left: -200px;
+  }
+
+  .headshot-wrap {
+    width: 100px;
+    height: 100px;
+    overflow:hidden;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: red;
+  }
+
+  .intro h1 {
+    font-size: 10pt;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 8pt;
+  }
+
+  .sm-icons img{
+    width: 25px;
+    margin: 12.5px;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .about h1 {
+    font-size: 15pt;
+  }
+
+  .about p {
+    font-size: 10pt;
+    padding: 15px 15px 0 15px;
+    text-align: justify;
+  }
+
+  .technology-header {
+    text-align: center;
+  }
+
+  .technologies {
+    text-align: center;
+    margin-top: -10pt;
+  }
+
+  .portfolio h1 {
+    font-size: 15pt;
+  }
+
+  .portfolio-project img{
+    width: 250px;
+  }
+
+  .portfolio-project p{
+    padding: 40px;
+    text-align: justify;
+  }
+
+  .contact h1 {
+    font-size: 15pt;
+  }
+
+  #landscape {visibility:hidden; }
+  #rotateplease {visibility:hidden; }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+  body { background-color: #000000; opacity: 0; background-image: url(‘images/landscape.png’); background-repeat: no-repeat; background-position: center center; }
+  #content {visibility:hidden;}
+  #landscape {visibility:visible;}
+  #rotateplease {visibility:visible;}
+  }
+  #landscape{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  }
+  #rotateplease {
+  background: url(‘images/landscape.png’) no-repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  position: absolute;
+  height: 145px;
+  width: 170px;
+  top: 20%;
+  left: 30%;
+  padding-top: 85px;
+  text-align: center;
+  opacity: 1;
+  }
+
+  #rotateplease p b{
+  width: 170px;
+  margin-left: 0px;
+  color:white;
+  }
+
 }

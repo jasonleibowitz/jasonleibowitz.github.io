@@ -19,15 +19,20 @@
   <script src="js/jquery.localScroll.min.js"></script>
   <script src="js/app.js"></script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <title>Jason Leibowitz | Web Developer</title>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+  <!-- ROTATE PROMPT -->
+  <div id="rotateplease"><p><b>Rotate Device to Portrait"</b></p></div>
 
   <!-- NAV -->
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container" id="column">
       <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
           <i class="fa fa-bars"></i>
         </button>
         <a href="#page-top" class="navbar-brand">Jason</a>
@@ -35,8 +40,8 @@
 
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="hidden active">
-          <a href="#page-top"></a>
+        <li class="page-scroll">
+          <a href="#page-top">Top</a>
         </li>
         <li class="page-scroll">
           <a href="#about">About</a>
@@ -63,6 +68,7 @@
     </div> <!-- END ROW -->
     <div class="row">
       <h1 id="my-name">JASON LEIBOWITZ</h1>
+      <h4 class="title">Junior Web Developer passionate about design, creativity and soccer.</h4>
     </div> <!-- END ROW -->
     <div class="row sm-icons">
       <div class="sm-icon twitter col-md-1 col-md-offset-4">
@@ -95,8 +101,8 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <p>Hi there! My name is Jason Leibowitz and I am a junior web developer, originally from Virginia Beach, living in Brooklyn, NY. I recently completed <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>'s 12-week <a href="https://generalassemb.ly/education/web-development-immersive" target="_blank">Web Development Immersive</a> where I learned fundamental front and back-end languages, programming methodologies, and best-practices. I'm now eager for the opportunity to work for a passionate, team-oriented tech company in New York as a junior developer.</p>
-        <p>I have always been interested in technology and am a voracious and quick learner. I have loved learning programming and the ability to create applications has rounded out my technological expertise and opened up whole new worlds for me.</p>
-        <p>I graduated <a href="http://www.nyu.edu/" target="_blank">New York University</a> with a degree in History in 2009 and have worked in Jewish non-profit for four and a half years. I thoroughly enjoyed giving back to the community and helping those in need, but am now excited to start a new chapter.</p>
+        <p>I have always been interested in technology and am a voracious and quick learner. I have loved learning programming and the ability to create applications has rounded out my technological skill set and opened up whole new worlds for me.</p>
+        <p>I graduated <a href="http://www.nyu.edu/" target="_blank">New York University</a> with a degree in History in 2009 and worked in Jewish non-profit for four and a half years. I thoroughly enjoyed giving back to the community and helping those in need, but am now excited to start a new chapter.</p>
       </div> <!-- END P DIV -->
     </div> <!-- END ROW -->
 
@@ -167,24 +173,34 @@
       </div>
     <div class="row">
       <div class="col-md-6 col-md-offset-3 portfolio-project">
+        <h4>Coffee Talk</h4>
         <a href="http://coffeetalk.herokuapp.com" target="_blank"><img src="images/portfolio/coffeetalk.png" alt=""></a>
         <p>CoffeeTalk helps people find others with similar interests and facilitates coffeeshop conversations between them.</p>
+        <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><button class="btn btn-default source-code">source code</button></a>
       </div>
       <div class="col-md-6 col-md-offset-3 portfolio-project">
+        <h4>SplitMate</h4>
         <a href="http://splitmate.herokuapp.com" target="_blank"><img src="images/portfolio/splitmate.png" alt=""></a>
         <p>SplitMate solves the problem of roommates fighting about chores by gamifying roommate chore tracking and putting financial incentives on completing your assigned chores.</p>
+        <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><button class="btn btn-default source-code">source code</button></a>
       </div>
       <div class="col-md-6 col-md-offset-3 portfolio-project">
+        <h4>Moker</h4>
         <a href="http://moker.herokuapp.com/" target="_blank"><img src="images/portfolio/moker.png" alt=""></a>
         <p>Moker enables people to find the best coffeeshops that are also inducive to mobile working. By allowing users to rank coffeeshops by wifi, space, outlets and coffee quality, Moker utilizes a custom algorithm that ranks coffeeshops by optimal workability.</p>
+        <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button class="btn btn-default source-code">source code</button></a>
       </div>
       <div class="col-md-6 col-md-offset-3 portfolio-project">
+        <h4>GifBook</h4>
         <a href="http://gifbook.herokuapp.com" taget="_blank"><img src="images/portfolio/GifBook.png" alt=""></a>
         <p>GifBook is a simple gif bookmarking tool.</p>
+        <a href="https://github.com/jasonleibowitz/GifBook" target="_blank"><button class="btn btn-default source-code">source code</button></a>
       </div>
       <div class="col-md-6 col-md-offset-3 portfolio-project">
+        <h4>Portfolio Website</h4>
         <a href="http://jasonleibowitz.org" taget="_blank"><img src="images/portfolio/portfolio.png" alt=""></a>
         <p>My Portfolio, but it doesn't meta much.</p>
+        <a href="https://github.com/jasonleibowitz/portfolio" target="_blank"><button class="btn btn-default source-code">source code</button></a>
       </div>
     </div>
   </section>
