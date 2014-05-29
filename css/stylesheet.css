@@ -377,7 +377,13 @@ and (min-device-width : 320px)
 and (max-device-width : 568px)
 and (orientation : landscape) {
 
-  body { background-color: #000000; opacity: 0; background-image: url(‘images/landscape.png’); background-repeat: no-repeat; background-position: center center; }
+  body {
+    background-color: #000000;
+    opacity: 0;
+    background-image: url("images/landscape.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
   #content {visibility:hidden;}
   #landscape {visibility:visible;}
   #rotateplease {visibility:visible;}
@@ -392,22 +398,22 @@ and (orientation : landscape) {
   opacity: 0.1;
   }
   #rotateplease {
-  background: url(‘images/landscape.png’) no-repeat scroll 0 0 transparent;
-  color: #FFFFFF;
-  position: absolute;
-  height: 145px;
-  width: 170px;
-  top: 20%;
-  left: 30%;
-  padding-top: 85px;
-  text-align: center;
-  opacity: 1;
+    background: url("images/landscape.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    position: absolute;
+    height: 145px;
+    width: 170px;
+    top: 20%;
+    left: 30%;
+    padding-top: 85px;
+    text-align: center;
+    opacity: 1;
   }
 
   #rotateplease p b{
-  width: 170px;
-  margin-left: 0px;
-  color:white;
+    width: 50px;
+    margin-left: 0px;
+    color:white;
   }
 
 }
