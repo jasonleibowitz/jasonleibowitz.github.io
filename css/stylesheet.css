@@ -397,7 +397,7 @@ and (orientation : landscape) {
   body {
     background-color: #000000;
     opacity: 0;
-    background-image: url("images/landscape.png");
+    background-image: url("../images/landscape.png");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -415,8 +415,8 @@ and (orientation : landscape) {
   opacity: 0.1;
   }
   #rotateplease {
-    background: url("images/landscape.png") no-repeat scroll 0 0 transparent;
-    color: #FFFFFF;
+    background: url("../images/landscape.png") no-repeat scroll 0 0 transparent;
+    color: white;
     position: absolute;
     height: 145px;
     width: 170px;
