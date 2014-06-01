@@ -314,6 +314,7 @@ and (orientation : portrait) {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   .headshot-wrap {
