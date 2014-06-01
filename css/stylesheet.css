@@ -11,6 +11,11 @@ html {
   height: 100%;
 }
 
+.scroll-wrapper {
+  position: absolute;
+  overflow-x: hidden;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -313,8 +318,6 @@ and (orientation : portrait) {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
   }
 
   .headshot-wrap {
