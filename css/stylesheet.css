@@ -216,6 +216,11 @@ img.headshot {
   color: #000000;
 }
 
+#resume-text {
+  color: black;
+  margin-top: -10px;
+}
+
 /*@media(min-width:767px) {
     .intro {
         height: 100%;
