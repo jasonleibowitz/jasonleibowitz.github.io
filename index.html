@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
 
+  <!-- Owl Stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+
   <!-- Fonts -->
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -19,6 +23,7 @@
   <script src="js/jquery.localScroll.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -183,42 +188,149 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>Moker</h4>
-            <a href="http://moker.herokuapp.com" target="_blank"><img src="images/portfolio/moker.png" alt=""></a>
-            <p>Moker enables people to find the best coffeeshops that are also inducive to mobile working. By allowing users to rank coffeeshops by wifi, space, outlets and coffee quality, Moker utilizes a custom algorithm that ranks coffeeshops by optimal workability.</p>
-            <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>Coffee Talk</h4>
-            <a href="http://coffeetalk.herokuapp.com" target="_blank"><img src="images/portfolio/coffeetalk.png" alt=""></a>
-            <p>CoffeeTalk helps people find others with similar interests and facilitates coffeeshop conversations between them.</p>
-            <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>SplitMate</h4>
-            <a href="http://splitmate.herokuapp.com" target="_blank"><img src="images/portfolio/splitmate.png" alt=""></a>
-            <p>SplitMate solves the problem of roommates fighting about chores by gamifying roommate chore tracking and putting financial incentives on completing your assigned chores.</p>
-            <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>Rate My Lunch</h4>
-            <a href="http://ratemylunch.herokuapp.com" target="_blank"><img src="images/portfolio/ratemylunch.png" alt=""></a>
-            <p>Built during Food Tech Connect's <a href="http://hackdiningnyc.foodtechconnect.com/" target="_blank">Hack//Dining Hackathon</a>, Rate My Lunch is a fun and innovative game for employees to inspire co-workers to eat the best lunches for their goals. Use the following login credentials to test the site: <em>jason@ham.co</em> and <em>password</em>.</p>
-            <a href="https://github.com/alexshook/ratemylunch" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>GifBook</h4>
-            <a href="http://gifbook.herokuapp.com" taget="_blank"><img src="images/portfolio/GifBook.png" alt=""></a>
-            <p>GifBook is a simple gif bookmarking tool.</p>
-            <a href="https://github.com/jasonleibowitz/GifBook" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
-            <h4>Portfolio Website</h4>
-            <a href="http://jasonleibowitz.org" taget="_blank"><img src="images/portfolio/portfolio.png" alt=""></a>
-            <p>My Portfolio, but it doesn't meta much.</p>
-            <a href="https://github.com/jasonleibowitz/portfolio" target="_blank"><button class="btn btn-default source-code">source code</button></a>
-          </div>
-        </div>
+            <div id="owl-demo" class="owl-carousel owl-theme portfolio">
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://moker.herokuapp.com" target="_blank"><img src="images/portfolio/moker.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>Moker enables people to find the best coffeeshops that are also inducive to mobile working. By allowing users to rank coffeeshops by wifi, space, outlets and coffee quality, Moker utilizes a custom algorithm that ranks coffeeshops by optimal workability.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <!-- end wrapper div -->
+                <div class="tags">
+                  <span class="label label-default">Ruby</span>
+                  <span class="label label-default">Rails</span>
+                  <span class="label label-default">JavaScript</span>
+                  <span class="label label-default">jQuery</span>
+                  <span class="label label-default">Foursquare API</span>
+                  <br>
+                  <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+              </div> <!-- END MOKER -->
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://coffeetalk.herokuapp.com" target="_blank"><img src="images/portfolio/coffeetalk.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>CoffeeTalk helps people find others with similar interests and facilitates coffeeshop conversations between them.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <!-- end wrapper div -->
+                <div class="tags">
+                  <span class="label label-default">Ruby</span>
+                  <span class="label label-default">Rails</span>
+                  <span class="label label-default">Foursquare API</span>
+                  <br>
+                  <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+              </div> <!-- END COFFEETALK -->
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://splitmate.herokuapp.com" target="_blank"><img src="images/portfolio/splitmate.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>SplitMate solves the problem of roommates fighting about chores by gamifying roommate chore tracking and putting financial incentives on completing your assigned chores.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <!-- end wrapper div -->
+                <div class="tags">
+                  <span class="label label-default">Ruby</span>
+                  <span class="label label-default">Rails</span>
+                  <span class="label label-default">jQuery</span>
+                  <span class="label label-default">Google Maps API</span>
+                  <br>
+                  <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+              </div> <!-- END SPLITMATE -->
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://ratemylunch.herokuapp.com" target="_blank"><img src="images/portfolio/ratemylunch.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>Built during Food Tech Connect's <a href="http://hackdiningnyc.foodtechconnect.com/" target="_blank">Hack//Dining Hackathon</a>, Rate My Lunch is a fun and innovative game for employees to inspire co-workers to eat the best lunches for their goals. Use the following login credentials to test the site: <em>jason@ham.co</em> and <em>password</em>.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <!-- end wrapper div -->
+                <div class="tags">
+                  <span class="label label-default">Ruby</span>
+                  <span class="label label-default">Rails</span>
+                  <span class="label label-default">jQuery</span>
+                  <span class="label label-default">Foundation</span>
+                  <span class="label label-default">AJAX</span>
+                  <span class="label label-default">Sensum.io API</span>
+                  <br>
+                  <a href="https://github.com/alexshook/ratemylunch" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+              </div> <!-- END RATE MY LUNCH -->
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://gifbook.herokuapp.com" taget="_blank"><img src="images/portfolio/GifBook.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>GifBook is a simple gif bookmarking tool.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <!-- end wrapper div -->
+                <div class="tags">
+                  <span class="label label-default">Ruby</span>
+                  <span class="label label-default">Rails</span>
+                  <span class="label label-default">Giphy API</span>
+                  <br>
+                  <a href="https://github.com/jasonleibowitz/GifBook" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+              </div> <!-- END GIFBOOK -->
+              <div class="item">
+                <!-- wrapper div -->
+                <div class='wrapper'>
+                    <!-- image -->
+                    <a href="http://jasonleibowitz.org" taget="_blank"><img src="images/portfolio/portfolio.png" alt=""></a>
+                    <!-- description div -->
+                    <div class='description'>
+                        <!-- description content -->
+                        <p class='description_content'>My Portfolio, but it doesn't meta much.</p>
+                        <!-- end description content -->
+                    </div>
+                    <!-- end description div -->
+                </div>
+                <div class="tags">
+                  <span class="label label-default">HTML5</span>
+                  <span class="label label-default">CSS3</span>
+                  <span class="label label-default">jQuery</span>
+                  <br>
+                  <a href="https://github.com/jasonleibowitz/portfolio" target="_blank"><button class="btn btn-default btn-sm source-code">source code</button></a>
+                </div>
+                <!-- end wrapper div -->
+              </div> <!-- END PORTFOLIO SITE -->
+            </div> <!-- END OWL DEMO -->
+          </div> <!-- END COL -->
+        </div> <!-- END ROW -->
+        <div class="bottom-margin"></div>
       </section>
 
     <!-- Uber-Celebrity Section -->
