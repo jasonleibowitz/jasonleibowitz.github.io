@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 
     $('#instagram-icon').mouseover(function(event) {
-        changeHeadshot(-800);
+        changeHeadshot(-770);
         changeIcon('instagram-icon', 'images/icons/instagram_color.png');
     });
     $('#instagram-icon').mouseleave(function(event){
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     $('#linkedin-icon').mouseover(function(event) {
-        changeHeadshot(-200);
+        changeHeadshot(-180);
         changeIcon('linkedin-icon','images/icons/linkedin_color.png');
     });
     $('#linkedin-icon').mouseleave(function(event){
@@ -29,12 +29,19 @@ $(document).ready(function () {
     });
 
     $('#github-icon').mouseover(function(event) {
-        changeHeadshot(-600);
+        changeHeadshot(-580);
         changeIcon('github-icon','images/icons/github_color.png');
     });
     $('#github-icon').mouseleave(function(event){
       defaultHeadshot();
       changeIcon('github-icon','images/icons/github_default.png');
+    });
+
+    $('#blog-icon').mouseover(function(event) {
+      changeHeadshot(-990);
+    });
+    $('#blog-icon').mouseleave(function(event){
+      defaultHeadshot();
     });
 
     $.localScroll();
@@ -74,7 +81,7 @@ $(document).ready(function () {
 });
 
 function defaultHeadshot(){
-  $('img.headshot').css('margin-left', -400);
+  $('img.headshot').css('margin-left', -385);
 }
 
 function changeHeadshot(position){
