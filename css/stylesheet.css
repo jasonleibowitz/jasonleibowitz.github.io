@@ -11,6 +11,10 @@ html {
   height: 100%;
 }
 
+.bottom-margin {
+  margin-bottom: 20px;
+}
+
 .scroll-wrapper {
   position: absolute;
   overflow-x: hidden;
@@ -197,8 +201,37 @@ img.headshot {
   margin-bottom: -10px;
 }
 
+.tags {
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+}
+
 .source-code {
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
+  margin-top: 10px;
+}
+
+.wrapper {
+  float: left;
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  opacity: 0.7;
+  filter: alpha(opactiy-70); /*IE*/
+}
+
+p.description_content {
+  padding: 10px;
+  margin: 0px;
 }
 
 .celebrity {
@@ -314,6 +347,12 @@ img.headshot {
 
   #landscape {visibility:hidden; }
   #rotateplease {visibility:hidden; }
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -448,3 +487,4 @@ and (orientation : landscape) {
   }
 
 }
+
