@@ -1,5 +1,6 @@
 $(document).ready(function () {
     console.log('loaded bro');
+    setIntervalArrowAnimation();
 
     $("#owl-demo").owlCarousel({
       navigation : true, // Show next and prev buttons
@@ -105,4 +106,17 @@ function changeHeadshot(position){
 
 function changeIcon(icon, img){
   $('#'+icon).attr('src', img);
+}
+
+function setIntervalArrowAnimation() {
+  var intervalOnID = setInterval(animateArrow, 1000);
+  var intervalOffID = setInterval(animateOffArrow, 1900);
+}
+
+function animateArrow(){
+  $('.fa-hand-o-up').addClass('animated bounce');
+}
+
+function animateOffArrow(){
+  $('.fa-hand-o-up').removeClass('animated bounce');
 }
