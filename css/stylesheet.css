@@ -157,7 +157,7 @@ img.headshot {
 
 .about {
   width: 100%;
-  height: auto;
+  height: 100%;
   color: #000000;
   background-color: #FFFFFF;
   padding-top: 50px;
@@ -182,7 +182,7 @@ img.headshot {
 
 .portfolio {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #000000;
   padding-top: 50px;
 }
@@ -363,6 +363,12 @@ p.description_content {
     width: 100%;
     height: auto;
 }
+
+/*@media(min-height:760px) {
+  .about {
+    background: red;
+  }
+}*/
 
 
 @media only screen
