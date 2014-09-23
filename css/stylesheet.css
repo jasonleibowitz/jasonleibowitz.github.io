@@ -15,6 +15,15 @@ html {
   margin-bottom: 20px;
 }
 
+.hover-info {
+  text-align: center;
+  margin-top: 2%;
+}
+
+#hover-info-text {
+  /*margin-top: -2px;*/
+}
+
 .scroll-wrapper {
   position: absolute;
   overflow-x: hidden;
