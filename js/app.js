@@ -109,7 +109,7 @@ function changeIcon(icon, img){
 
 function setIntervalArrowAnimation() {
   var intervalOnID = setInterval(animateArrow, 1000);
-  var intervalOffID = setInterval(animateOffArrow, 1900);
+  var intervalOffID = setInterval(animateOffArrow, 4000);
 }
 
 function animateArrow(){
