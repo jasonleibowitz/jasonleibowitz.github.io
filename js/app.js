@@ -8,14 +8,9 @@ $(document).ready(function () {
       paginationSpeed : 400,
       singleItem:true,
       autoPlay: true
+    });
 
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-  });
+    $('#Container').mixItUp();
 
     $('#twitter-icon').mouseover(function(event) {
         changeHeadshot(0);
