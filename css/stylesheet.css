@@ -189,8 +189,7 @@ img.headshot {
 
 .portfolio-wrap {
   background: red;
-  height: 100%;
-  overflow: scroll;
+  height: auto;
 }
 
 .portfolio-project {
@@ -614,6 +613,14 @@ and (orientation : landscape) {
 
 .portfolio button + label{
   margin-left: 1em;
+}
+
+.button-wrap {
+  padding-top: 20px;
+}
+
+#Container .mix {
+  display: none;
 }
 
 .container{

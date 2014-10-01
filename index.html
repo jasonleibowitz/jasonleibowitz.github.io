@@ -190,10 +190,19 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
 
-    <div class="portfolio-wrap col-xs-10 col-xs-offset-1">
 
-      <div class="row">
-        <div class="portfolio-project">
+    <div class="portfolio-wrap col-xs-10 col-xs-offset-1">
+      <div class="button-wrap">
+        <button class="filter" data-filter="all">Show All</button>
+        <button class="filter" data-filter=".category-1">Side Projects</button>
+        <button class="filter" data-filter=".category-2">Class Projects</button>
+        <button class="filter" data-filter=".category-3">Freelance</button>
+        <button class="sort" data-sort="myorder:asc">Newest</button>
+        <button class="sort" data-sort="myorder:desc">Oldest</button>
+      </div>
+
+      <div class="col-xs-12" id="Container">
+        <div class="mix category-1 portfolio-project" data-myorder="2">
           <img class="portfolio-project-img" src="images/portfolio/follow_the_tweeter.png" alt="">
           <a href="http://followthetweeter.com" target=_"blank"><h4>Follow The Tweeter</h4> <i class="fa fa-external-link"></i></a>
           <ul class="tags">
@@ -207,7 +216,7 @@
           <a href="https://github.com/jasonleibowitz/Follow-the-Tweeter" target="_blank"><p class="source-code">View project on GitHub</p></a>
         </div>
 
-        <div class="portfolio-project">
+        <div class="mix category-2 portfolio-project" data-myorder="6">
           <img class="portfolio-project-img" src="images/portfolio/moker-search.png" alt="">
           <a href="http://moker.herokuapp.com/" target=_"blank"><h4>Moker</h4> <i class="fa fa-external-link"></i></a>
           <ul class="tags">
@@ -220,32 +229,82 @@
           <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><p class="source-code">View project on GitHub</p></a>
         </div>
 
-        <div class="portfolio-project">
+        <div class="mix category-1 portfolio-project" data-myorder="3">
           <img class="portfolio-project-img" src="images/portfolio/metromath.png" alt="">
           <a href="http://www.metromath.info/" target=_"blank"><h4>MetroMath</h4> <i class="fa fa-external-link"></i></a>
           <ul class="tags">
             <li>Ruby</li>
             <li>Rails API</li>
-            <li>HTML/CSS/JS Frontend</li>
+            <li>jQuery</li>
+            <li>AJAX</li>
           </ul>
           <p class="project-description">Quickly determine whether you should purchase a monthly or regular metrocard, and how much you can save.</p>
           <a href="https://github.com/jasonleibowitz/metrocard_app" target="_blank"><p class="source-code">View project on GitHub</p></a>
         </div>
 
-        <div class="portfolio-project">
+        <div class="mix category-3 portfolio-project" data-myorder="1">
           <img class="portfolio-project-img" src="images/portfolio/wolflax.png" alt="">
           <a href="http://wolflax.com/" target=_"blank"><h4>Wolf Lacrosse</h4> <i class="fa fa-external-link"></i></a>
           <ul class="tags">
             <li>Ruby</li>
-            <li>Rails API</li>
+            <li>Rails</li>
             <li>Stripe API</li>
             <li>jQuery</li>
           </ul>
           <p class="project-description">Quickly determine whether you should purchase a monthly or regular metrocard, and how much you can save.</p>
           <a href="https://github.com/jasonleibowitz/wolflax" target="_blank"><p class="source-code">View project on GitHub</p></a>
         </div>
-      </div>
 
+        <div class="mix category-2 portfolio-project" data-myorder="8">
+          <img class="portfolio-project-img" src="images/portfolio/coffeetalk.png" alt="">
+          <a href="http://www.gocoffeetalk.com/" target=_"blank"><h4>Coffee Talk</h4> <i class="fa fa-external-link"></i></a>
+          <ul class="tags">
+            <li>Ruby</li>
+            <li>Rails</li>
+          </ul>
+          <p class="project-description">Recreate classic coffeehouse culture by matching like-minded people together.</p>
+          <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><p class="source-code">View project on GitHub</p></a>
+        </div>
+
+        <div class="mix category-2 portfolio-project" data-myorder="7">
+          <img class="portfolio-project-img" src="images/portfolio/splitmate.png" alt="">
+          <a href="http://splitmate.herokuapp.com/" target=_"blank"><h4>SplitMate</h4> <i class="fa fa-external-link"></i></a>
+          <ul class="tags">
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>jQuery</li>
+            <li>Google Maps API</li>
+          </ul>
+          <p class="project-description">SplitMate solve the problem of roommate fighting about chores by gamifying roommate chore tracking.</p>
+          <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><p class="source-code">View project on GitHub</p></a>
+        </div>
+
+        <div class="mix category-2 portfolio-project" data-myorder="4">
+          <img class="portfolio-project-img" src="images/portfolio/ratemylunch.png" alt="">
+          <a href="http://ratemylunch.herokuapp.com/" target=_"blank"><h4>Rate My Lunch</h4> <i class="fa fa-external-link"></i></a>
+          <ul class="tags">
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>jQuery</li>
+            <li>jQuery</li>
+          </ul>
+          <p class="project-description">A fun and innovative game for employees to inspire co-workers to eat the best lunches for their goals.</p>
+          <a href="https://github.com/alexshook/ratemylunch" target="_blank"><p class="source-code">View project on GitHub</p></a>
+        </div>
+
+        <div class="mix category-1 portfolio-project" data-myorder="5">
+          <img class="portfolio-project-img" src="images/portfolio/portfolio.png" alt="">
+          <a href="http://www.jasonleibowitz.org/" target=_"blank"><h4>My Portfolio</h4> <i class="fa fa-external-link"></i></a>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+          </ul>
+          <p class="project-description">My portfolio page, but it doesn't meta much.</p>
+          <a href="https://github.com/jasonleibowitz/jasonleibowitz.github.io" target="_blank"><p class="source-code">View project on GitHub</p></a>
+        </div>
+
+      </div>
     </div>
 
     </section>
@@ -262,20 +321,20 @@
           <hr>
         </div>
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
+          <div class="col-md-6 col-md-offset-3 ">
             <h4>Interview about General Assembly on CNBC</h4>
             <iframe width="500" height="281" src="https://www.youtube.com/embed/0Nfjqfj3Rnw" frameborder="0" allowfullscreen></iframe>
             <!-- <a href="http://video.cnbc.com/gallery/?video=3000290344" target="_blank"><img src="images/celebrity/cnbc_interview.png" alt=""></a> -->
             <p>Interviewed on CNBC's Squawk Alley about my experiences at General Assembly's Web Development Immersive.</p>
             <!-- <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button class="btn btn-default source-code">source code</button></a> -->
           </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
+          <div class="col-md-6 col-md-offset-3 ">
             <h4>Jewish Federation of Edmonton Stock Image</h4>
             <a href="http://www.jewishedmonton.org/page.aspx?id=265363" target="_blank"><img src="images/celebrity/pic_on_edmonton_site.png" alt=""></a>
             <p>Participated in a photo shoot for the Jewish Federations of North America, after which one of my pictures was chosen to be published on the Jewish Federation of Edmonton's website.</p>
             <!-- <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button class="btn btn-default source-code">source code</button></a> -->
           </div>
-          <div class="col-md-6 col-md-offset-3 portfolio-project">
+          <div class="col-md-6 col-md-offset-3">
             <h4>JFNA General Assembly 2012</h4>
             <img src="images/celebrity/nola_ga.jpg" alt="">
             <p>Represented the Jewish Federation's flagship event on their main signage.</p>
