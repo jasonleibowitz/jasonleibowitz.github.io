@@ -336,6 +336,7 @@ p.description_content {
 .celebrity {
   color: black;
   padding-top: 50px;
+  text-align: center;
 }
 
 .celebrity h1 {
