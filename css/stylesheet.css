@@ -15,6 +15,10 @@ html {
   margin-bottom: 20px;
 }
 
+.bottom-margin-2x {
+  margin-bottom: 50px;
+}
+
 .hover-info {
   text-align: center;
   margin-top: 2%;
@@ -114,7 +118,7 @@ p {
   color: white;
 }
 
-.btn {
+.contact-btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -124,8 +128,8 @@ p {
     transition: all .3s ease-in-out;
 }
 
-.btn:hover,
-.btn:focus {
+.contact-btn:hover,
+.contact-btn:focus {
     border: 1px solid white;
     outline: 0;
     color: white;
@@ -188,7 +192,7 @@ img.headshot {
 }
 
 .portfolio-wrap {
-  background: red;
+  background: black;
   height: auto;
 }
 
@@ -196,11 +200,12 @@ img.headshot {
   border: 1px solid white;
   background: RGBA(249, 249, 249, 1);
   width: 300px;
-  height: 400px;
+  height: 325px;
   margin: 25px;
   overflow: hidden;
   color: RGBA(85, 85, 85, 1);
   float: left;
+  border-radius: 2px;
 }
 
 .portfolio-project img {
@@ -230,7 +235,7 @@ img.headshot {
 }
 
 .portfolio-project .tags {
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
 }
 
 .portfolio-project .tags li {
@@ -258,13 +263,27 @@ img.headshot {
   font-size: 14px;
 }
 
-/*.portfolio h1 {
+.more-info-button {
+  margin-left: 5px;
+  /*display: inline-block;*/
+  /*padding: .4em .8em;*/
+  background: #666;
+  border: 0;
+  /*color: #ddd;*/
+  /*font-size: 16px;*/
+  /*font-weight: 300;*/
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.portfolio h1 {
   font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 30pt;
   text-align: center;
   color: #FFFFFF;
-}*/
+  text-transform: uppercase;
+}
 
 /*.portfolio img{
   width: 400px;
@@ -591,7 +610,19 @@ and (orientation : landscape) {
   margin: 0 .4em 0 0;
 }
 
-.portfolio button{
+.contact-button button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-wrap button {
   display: inline-block;
   padding: .4em .8em;
   background: #666;

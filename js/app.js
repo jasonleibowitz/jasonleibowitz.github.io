@@ -87,6 +87,10 @@ $(document).ready(function () {
 
 });
 
+$(window).load(function(){
+  setPortfolioSectionHeight();
+})
+
 
 
 });
@@ -114,4 +118,13 @@ function animateArrow(){
 
 function animateOffArrow(){
   $('.fa-hand-o-up').removeClass('animated bounce');
+}
+
+function setPortfolioSectionHeight(){
+  var height = 0;
+  $("#portfolio > *").each(function(){
+    height += $(this).height();
+  });
+  console.log(height);
+  $("#portfolio").css('height', height + 100 + "px");
 }
