@@ -8,14 +8,9 @@ $(document).ready(function () {
       paginationSpeed : 400,
       singleItem:true,
       autoPlay: true
+    });
 
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-  });
+    $('#Container').mixItUp();
 
     $('#twitter-icon').mouseover(function(event) {
         changeHeadshot(0);
@@ -92,6 +87,10 @@ $(document).ready(function () {
 
 });
 
+$(window).load(function(){
+  setPortfolioSectionHeight();
+})
+
 
 
 });
@@ -110,7 +109,7 @@ function changeIcon(icon, img){
 
 function setIntervalArrowAnimation() {
   var intervalOnID = setInterval(animateArrow, 1000);
-  var intervalOffID = setInterval(animateOffArrow, 1900);
+  var intervalOffID = setInterval(animateOffArrow, 4000);
 }
 
 function animateArrow(){
@@ -119,4 +118,13 @@ function animateArrow(){
 
 function animateOffArrow(){
   $('.fa-hand-o-up').removeClass('animated bounce');
+}
+
+function setPortfolioSectionHeight(){
+  var height = 0;
+  $("#portfolio > *").each(function(){
+    height += $(this).height();
+  });
+  console.log(height);
+  $("#portfolio").css('height', height + 100 + "px");
 }
