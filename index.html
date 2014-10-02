@@ -197,7 +197,7 @@
 
 
       <div class="portfolio-wrap col-xs-10 col-xs-offset-1">
-        <div class="button-wrap">
+        <div class="button-wrap col-xs-12">
           <button class="filter" data-filter="all">Show All</button>
           <button class="filter" data-filter=".category-1">Side Projects</button>
           <button class="filter" data-filter=".category-2">Class Projects</button>
@@ -206,10 +206,17 @@
           <button class="sort" data-sort="myorder:desc">Oldest</button>
         </div>
 
+        <!-- Follow the Tweeter -->
         <div class="col-xs-12" id="Container">
           <div class="mix category-1 portfolio-project" data-myorder="2">
-            <img class="portfolio-project-img" src="images/portfolio/follow_the_tweeter.png" alt="">
-            <a href="http://followthetweeter.com" target=_"blank"><h4>Follow The Tweeter</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://followthetweeter.com" target=_"blank">
+            <div class="main-img" id="follow-the-tweeter">
+              <div class="overlay-img">
+                <p class="project-description">Follow the Tweeter connects to the Twitter API and analyzes any public twitter account to find it's "followbility score". The app displays a dashboard of relevent information about the account to help you determine who to follow.</p>
+              </div>
+            </div>
+            <!-- <img class="portfolio-project-img" src="images/portfolio/follow_the_tweeter.png" alt=""> -->
+            <h4>Follow The Tweeter</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
@@ -217,104 +224,142 @@
               <li>Chart.js</li>
               <li>jQuery</li>
             </ul>
-            <!-- <p class="project-description">Evaluate if a Twitter user is worth following using analytics and a custom followbility score.</p> -->
-            <!-- <a href="https://github.com/jasonleibowitz/Follow-the-Tweeter" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/Follow-the-Tweeter" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- Moker -->
           <div class="mix category-2 portfolio-project" data-myorder="6">
-            <img class="portfolio-project-img" src="images/portfolio/moker-search.png" alt="">
-            <a href="http://moker.herokuapp.com/" target=_"blank"><h4>Moker</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://moker.herokuapp.com/" target=_"blank">
+            <div id="moker" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">Moker enables people to find the best coffeeshops that are also conducive to mobile working. By allowing users to rank coffeeshops by wifi, space, outlets, and coffee quality, Moker utilizes a custom algorithm that ranks coffeshops by optimal workability.</p>
+              </div>
+            </div>
+            <h4>Moker</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
               <li>Foursquare API</li>
               <li>jQuery</li>
             </ul>
-            <!--           <p class="project-description">Easily find and rank the coffeeshops most suited for mobile working. Using a custom algorithm, it finds the best coffeeshops.</p>
-            <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/moker_app" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- MetroMath -->
           <div class="mix category-1 portfolio-project" data-myorder="3">
-            <img class="portfolio-project-img" src="images/portfolio/metromath.png" alt="">
-            <a href="http://www.metromath.info/" target=_"blank"><h4>MetroMath</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://www.metromath.info/" target=_"blank">
+            <div id="metromath" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                  Should you buy a 30-day unlimited MetroCard or a regulard card? MetroMath does the math for you!
+                </p>
+              </div>
+            </div>
+            <h4>MetroMath</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails API</li>
               <li>jQuery</li>
               <li>AJAX</li>
             </ul>
-            <!--           <p class="project-description">Quickly determine whether you should purchase a monthly or regular metrocard, and how much you can save.</p>
-            <a href="https://github.com/jasonleibowitz/metrocard_app" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/metrocard_app" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- Wolflax -->
           <div class="mix category-3 portfolio-project" data-myorder="1">
-            <img class="portfolio-project-img" src="images/portfolio/wolflax.png" alt="">
-            <a href="http://wolflax.com/" target=_"blank"><h4>Wolf Lacrosse</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://wolflax.com/" target=_"blank">
+            <div id="wolflax" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                Worked with a client to create a fully designed website for a NY-based lacrosse clinic. The site features an admin login via devise, which allows admin to add new clinics and view students signed up. Used the Stripe API to allow students to purchase and sign up for clinics.
+                </p>
+              </div>
+            </div>
+            <h4>Wolf Lacrosse</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
               <li>Stripe API</li>
               <li>jQuery</li>
             </ul>
-            <!-- <p class="project-description">Quickly determine whether you should purchase a monthly or regular metrocard, and how much you can save.</p>
-            <a href="https://github.com/jasonleibowitz/wolflax" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/wolflax" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- Coffee Talk -->
           <div class="mix category-2 portfolio-project" data-myorder="8">
-            <img class="portfolio-project-img" src="images/portfolio/coffeetalk.png" alt="">
-            <a href="http://www.gocoffeetalk.com/" target=_"blank"><h4>Coffee Talk</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://www.gocoffeetalk.com/" target=_"blank">
+            <div id="coffee-talk" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                  CoffeeTalk helps people find others with similar interests and facilitates coffeeshop conversations between them.
+                </p>
+              </div>
+            </div>
+            <h4>Coffee Talk</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
             </ul>
-            <!-- <p class="project-description">Recreate classic coffeehouse culture by matching like-minded people together.</p>
-            <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/coffeetalk_app" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- SplitMate -->
           <div class="mix category-2 portfolio-project" data-myorder="7">
-            <img class="portfolio-project-img" src="images/portfolio/splitmate.png" alt="">
-            <a href="http://splitmate.herokuapp.com/" target=_"blank"><h4>SplitMate</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://splitmate.herokuapp.com/" target=_"blank">
+            <div id="splitmate" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                  SplitMate solves the problem of roommates fighting about chores by gamifying roommate chore tracking and putting financial incentives on completing your assigned chores. 
+                </p>
+              </div>
+            </div>
+            <h4>SplitMate</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
               <li>jQuery</li>
               <li>Google Maps API</li>
             </ul>
-            <!-- <p class="project-description">SplitMate solve the problem of roommate fighting about chores by gamifying roommate chore tracking.</p>
-            <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/SplitMate" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- Rate My Lunch -->
           <div class="mix category-2 portfolio-project" data-myorder="4">
-            <img class="portfolio-project-img" src="images/portfolio/ratemylunch.png" alt="">
-            <a href="http://ratemylunch.herokuapp.com/" target=_"blank"><h4>Rate My Lunch</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://ratemylunch.herokuapp.com/" target=_"blank">
+            <div id="ratemylunch" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                  Built during Foot Tech Connect's Hack//Dining Hackathon, Rate My Lunch is a fun and innovative game for employees to inspire co-workers to eat the best lunches for their goals. Use the following login credentials to test the site: <i>jason@ham.co</i> and <i>password</i>.
+                </p>
+              </div>
+            </div>
+            <h4>Rate My Lunch</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>Ruby</li>
               <li>Rails</li>
               <li>jQuery</li>
               <li>jQuery</li>
             </ul>
-            <!-- <p class="project-description">A fun and innovative game for employees to inspire co-workers to eat the best lunches for their goals.</p>
-            <a href="https://github.com/alexshook/ratemylunch" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/alexshook/ratemylunch" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
+          <!-- Portfolio -->
           <div class="mix category-1 portfolio-project" data-myorder="5">
-            <img class="portfolio-project-img" src="images/portfolio/portfolio.png" alt="">
-            <a href="http://www.jasonleibowitz.org/" target=_"blank"><h4>My Portfolio</h4> <i class="fa fa-external-link"></i></a>
+            <a href="http://www.jasonleibowitz.org/" target=_"blank">
+            <div id="portfolio-proj" class="main-img">
+              <div class="overlay-img">
+                <p class="project-description">
+                  My portfolio, but it doesn't meta much.
+                </p>
+              </div>
+            </div>
+            <h4>My Portfolio</h4> <i class="fa fa-external-link"></i></a>
             <ul class="tags">
               <li>HTML</li>
               <li>CSS</li>
               <li>jQuery</li>
             </ul>
-            <!-- <p class="project-description">My portfolio page, but it doesn't meta much.</p>
-            <a href="https://github.com/jasonleibowitz/jasonleibowitz.github.io" target="_blank"><p class="source-code">View project on GitHub</p></a> -->
-            <button type="button" class="btn btn-primary btn-sm more-info-button">More info</button>
+            <a href="https://github.com/jasonleibowitz/jasonleibowitz.github.io" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
           </div>
 
         </div>

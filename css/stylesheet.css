@@ -192,7 +192,10 @@ img.headshot {
 }
 
 .portfolio-wrap {
-  background: black;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /*background: red;*/
   height: auto;
 }
 
@@ -206,11 +209,97 @@ img.headshot {
   color: RGBA(85, 85, 85, 1);
   float: left;
   border-radius: 2px;
+  z-index: 1;
 }
 
 .portfolio-project img {
   width: 100%;
   height: 197px;
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-project-overlay img {
+  width: 100%;
+  height: 197px;
+  display: absolute;
+  z-index: 10;
+  opacity: .7;
+  top: 0;
+  left: 0;
+}
+
+#follow-the-tweeter {
+  background:url(../images/portfolio/follow_the_tweeter.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#moker {
+  background: url(../images/portfolio/moker-search.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#metromath {
+  background: url(../images/portfolio/metromath.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#wolflax {
+  background: url(../images/portfolio/wolflax.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#coffee-talk {
+  background: url(../images/portfolio/coffeetalk.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#splitmate {
+  background: url(../images/portfolio/splitmate.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#ratemylunch {
+  background: url(../images/portfolio/ratemylunch.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+#portfolio-proj {
+  background: url(../images/portfolio/portfolio.png);
+  width: 100%;
+  height: 197px;
+  background-size: cover;
+}
+
+.overlay-img {
+  background: rgba(0,0,0,.75);
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  width: 100%;
+  height: 197px;
+  z-index: 10;
+  color: white;
+}
+
+.main-img:hover .overlay-img {
+  opacity: 1;
 }
 
 .portfolio-project h4 {
@@ -250,6 +339,7 @@ img.headshot {
 }
 
 .portfolio-project .project-description {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   padding: 5px;
   text-align: justify;
@@ -264,6 +354,7 @@ img.headshot {
 }
 
 .more-info-button {
+  font-family: courier;
   margin-left: 5px;
   /*display: inline-block;*/
   /*padding: .4em .8em;*/
@@ -661,6 +752,7 @@ and (orientation : landscape) {
 
 .button-wrap {
   padding-top: 20px;
+  margin-left: 25px;
 }
 
 #Container .mix {
