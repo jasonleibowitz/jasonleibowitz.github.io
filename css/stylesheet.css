@@ -345,6 +345,13 @@ img.headshot {
   text-align: justify;
 }
 
+.header-description {
+  font-family: Montserrat, "Helvetica-Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+}
+
 .portfolio-project .source-code {
   text-decoration: underline;
   color: RGBA(66, 139, 202, 1);
