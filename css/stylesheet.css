@@ -555,8 +555,6 @@ p.description_content {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 
-  #landscape {visibility:hidden; }
-  #rotateplease {visibility:hidden; }
 }
 
 #owl-demo .item img{
