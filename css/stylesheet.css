@@ -71,10 +71,6 @@ p.helper-text {
   position: absolute;
 }
 
-#intro-content {
-  padding-top: 100px;
-}
-
 img.headshot {
   width: 1200px;
   margin-left: -385px;
@@ -377,6 +373,9 @@ img.headshot {
     margin-right: 20px;
   }
 
+  #intro-content {
+    padding-top: 100px;
+  }
 
   #twitter:hover {
     color: RGB(85, 172, 238);
@@ -399,6 +398,10 @@ img.headshot {
   }
 
   /*////////////// ABOUT //////////////*/
+
+  #about {
+    padding-top: 50px;
+  }
 
   .helper-text, #slider, #tech-position {
     display: none;
@@ -577,6 +580,10 @@ img.headshot {
 
   /*////////////// CELEBRITY //////////////*/
 
+  #celebrity {
+    padding-top: 50px;
+  }
+
   #celebrity p {
     text-align: center;
     padding: 10px 200px 10px 200px;
@@ -597,6 +604,10 @@ img.headshot {
   }
 
   /*////////////// CONTACT //////////////*/
+
+  #contact {
+    padding-top: 50px;
+  }
 
   #contact .contact-i {
     padding: 20px;
