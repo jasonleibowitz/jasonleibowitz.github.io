@@ -21,7 +21,9 @@ var changesForDesktop = function (){
   $("#rss").removeClass('fa-3x').addClass('fa-4x');
 
   // Fix Footer Width
-  $("#footer").removeClass('col-xs-12').addClass('col-xs-10');
+  $("#footer").css('position', 'relative');
+  $("#footer").css('bottom', 0);
+  $("#footer").css('margin-top', '300px');
 
   // Add Collapse and Custom Styles to Navbar
   $(".navbar").addClass('navbar-fixed-top');

@@ -286,7 +286,7 @@ img.headshot {
 
 #footer {
   font-size: 5pt;
-  /*position: absolute;*/
+  position: absolute;
   bottom: 25px;
 }
 
