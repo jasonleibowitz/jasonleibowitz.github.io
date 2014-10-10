@@ -1,8 +1,18 @@
 $(document).ready(function () {
     console.log('loaded bro');
+
+    if(WURFL.is_mobile){
+      console.log("mobile device");
+      $('#stylesheet').remove();
+      $('#mixitup').remove();
+      $('head').append("<link rel='stylesheet' href='css/mobile-stylesheet.css'>");
+    } else {
+      console.log('desktop device');
+    }
+
     setIntervalArrowAnimation();
 
-    $('#Container').mixItUp();
+    // $('#Container').mixItUp();
 
     $('#twitter-icon').mouseover(function(event) {
         changeHeadshot(0);
