@@ -316,6 +316,84 @@ img.headshot {
     line-height: 1.5;
   }
 
+  /*////////////// NAVBAR //////////////*/
+
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  .navbar-brand:focus {
+    outline: 0;
+  }
+
+  .navbar-custom a {
+    color: #fff;
+  }
+
+  .navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -mox-transition: background .3 ease-in-out;
+    transition: background .3s ease-in-out;
+  }
+
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus,
+  .navbar-custom .nav li.active {
+    outline: 0;
+    background-color: red;
+  }
+
+  .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .navbar-toggle:focus,
+  .navbar-toggle:active {
+    outline: 0;
+  }
+
+  #navigation li {
+    display: inline;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  #navigation a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #000;
+  }
+
+  .navbar {
+    position: fixed;
+    list-style: none;
+    display: ineline;
+    color: #000000;
+    z-index: 10;
+    right: 0;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding: 20px 0;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background .5s ease-in-out, padding .5 ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
   /*////////////// INTRO //////////////*/
 
   .headshot-wrap {

@@ -23,6 +23,18 @@ var changesForDesktop = function (){
   // Fix Footer Width
   $("#footer").removeClass('col-xs-12').addClass('col-xs-10');
 
+  // Add Collapse and Custom Styles to Navbar
+  $(".navbar").addClass('navbar-fixed-top');
+
+  // Navbar Collapse Logic
+  $(window).scroll(function(){
+    if ($(".navbar").offset().top > 50) {
+      $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+      $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+  });
+
   // Mix It Up
   $('#Container').mixItUp();
 
