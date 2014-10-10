@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if(WURFL.is_mobile){
+    if(WURFL.form_factor === 'Smartphone'){
       console.log("mobile device");
     } else if (WURFL.form_factor === 'Desktop' || WURFL.form_factor === 'Tablet') {
       console.log('desktop device');
