@@ -1,7 +1,7 @@
 $(document).ready(function () {
     if(WURFL.is_mobile){
       console.log("mobile device");
-    } else {
+    } else if (WURFL.form_factor === 'Desktop' || WURFL.form_factor === 'Tablet') {
       console.log('desktop device');
       changesForDesktop();
     }
