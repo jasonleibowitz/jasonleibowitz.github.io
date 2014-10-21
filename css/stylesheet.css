@@ -627,3 +627,35 @@ img.headshot {
 
 
 }
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+  /*////////////// GLOBAL //////////////*/
+
+  html{
+    overflow-x: hidden;
+  }
+
+  /*////////////// NAVBAR //////////////*/
+
+  .navbar {
+    background: #000000;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
