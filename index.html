@@ -400,6 +400,42 @@
           </div>
         </div> <!-- END WOLFLAX -->
 
+      <!-- Tidewater Media Group -->
+      <div class="col-xs-12">
+        <div class="portfolio-project">
+          <div id="slider-tmg" class="swipe">
+            <div class="swipe-wrap">
+              <div>
+                <img src="images/portfolio/tidewatermediagroup.png" alt="">
+              </div>
+              <div class="project-description">
+                <p>Worked with a freelance videography company to make a minimalist website to show off their portfolio and services on a shoestring budget. The site features an interactive filter menu on their portfolio page.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-xs-12">
+            <span id="tmg-position">
+              <div class="slider-nav">
+                <em class="on">•</em>
+                <em>•</em>
+              </div>
+            </span> <!-- END POSITION -->
+          </div> <!-- END PAGINATION COL -->
+          </div> <!-- END PAGINATION ROW -->
+          <a href="http://www.tidewatermediagroup.com/" target="_blank">
+            <h4>Wolf Lacrosse</h4> <i class="fa fa-external-link"></i></a>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>jQuery</li>
+            </ul>
+            <a href="https://github.com/jasonleibowitz/Tidewater-Media-Group" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button>
+            </a>
+          </div>
+        </div> <!-- END Tidewater Media Group -->
+
       <!-- Portfolio -->
       <div class="col-xs-12">
         <div class="portfolio-project">
@@ -528,6 +564,25 @@
         </ul>
         <a href="https://github.com/jasonleibowitz/wolflax" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
       </div> <!-- END WOLFLAX -->
+
+      <!-- TIDEWATER MEDIA GROUP -->
+      <div class="mix category-3 portfolio-project" data-myorder="1">
+        <a href="http://www.tidewatermediagroup.com/" target=_"blank">
+        <div id="tidewatermediagroup" class="main-img">
+          <div class="overlay-img">
+            <p class="project-description">
+            Worked with a freelance videography company to make a minimalist website to show off their portfolio and services on a shoestring budget. The site features an interactive filter menu on their portfolio page.
+            </p>
+          </div>
+        </div>
+        <h4>Tidewater Media Group</h4> <i class="fa fa-external-link"></i></a>
+        <ul class="tags">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>jQuery</li>
+        </ul>
+        <a href="https://github.com/jasonleibowitz/Tidewater-Media-Group" target="_blank"><button type="button" class="btn btn-primary btn-sm more-info-button">Source Code</button></a>
+      </div> <!-- END TIDEWATER MEDIA GROUP -->
 
       <!-- Coffee Talk -->
       <div class="mix category-2 portfolio-project" data-myorder="8">
@@ -739,6 +794,18 @@
             wolflaxBullets[i].className = ' ';
           }
           wolflaxBullets[e].className = 'on';
+        },
+        continuous: false
+      });
+
+    tmgBullets = document.getElementById('tmg-position').getElementsByTagName('em');
+    var tmgSlider = new Swipe(document.getElementById('slider-tmg'), {
+        callback: function(e, pos) {
+          var i = tmgBullets.length;
+          while (i--) {
+            tmgBullets[i].className = ' ';
+          }
+          tmgBullets[e].className = 'on';
         },
         continuous: false
       });
