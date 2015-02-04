@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    if (window.location.host == "leibowitz.me") {
+      window.location.href = "http://jason.leibowitz.me";
+    }
+
     if(WURFL.form_factor === 'Smartphone'){
       console.log("mobile device");
     } else if (WURFL.form_factor === 'Desktop' || WURFL.form_factor === 'Tablet') {
