@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/jasonleibowitz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://leibowitz.me
+  * I am jasonleibowitz (https://keybase.io/jasonleibowitz) on keybase.
+  * I have a public key ASC3DMPetqvFckA1VWdqMIJ_Ag5GyN3NMj10k9wK6q7tmAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b70cc3deb6abc572403555676a30827f020e46c8ddcd323d7493dc0aeaaeed980a",
+            "host": "keybase.io",
+            "kid": "0120b70cc3deb6abc572403555676a30827f020e46c8ddcd323d7493dc0aeaaeed980a",
+            "uid": "0ec71c87d53a9c9354d530d8b6bb3719",
+            "username": "jasonleibowitz"
+        },
+        "service": {
+            "hostname": "leibowitz.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.9"
+    },
+    "ctime": 1456463021,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1456462695,
+        "hash": "99a6042b96545519e4f112e8ccd614ac5e95461e0dd46128a06dc58bdf8ceb9509140444aab436387797639c611116e261f50e06cf4be76cd9f92ae33df532b2",
+        "seqno": 395687
+    },
+    "prev": "bcb4d961fd59b1520fc6f1fa572384291ecebde24a11f45f10f19e54c8ddf209",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtwzD3rarxXJANVVnajCCfwIORsjdzTI9dJPcCuqu7ZgKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjcwY2MzZGViNmFiYzU3MjQwMzU1NTY3NmEzMDgyN2YwMjBlNDZjOGRkY2QzMjNkNzQ5M2RjMGFlYWFlZWQ5ODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjcwY2MzZGViNmFiYzU3MjQwMzU1NTY3NmEzMDgyN2YwMjBlNDZjOGRkY2QzMjNkNzQ5M2RjMGFlYWFlZWQ5ODBhIiwidWlkIjoiMGVjNzFjODdkNTNhOWM5MzU0ZDUzMGQ4YjZiYjM3MTkiLCJ1c2VybmFtZSI6Imphc29ubGVpYm93aXR6In0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJsZWlib3dpdHoubWUiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjkifSwiY3RpbWUiOjE0NTY0NjMwMjEsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ1NjQ2MjY5NSwiaGFzaCI6Ijk5YTYwNDJiOTY1NDU1MTllNGYxMTJlOGNjZDYxNGFjNWU5NTQ2MWUwZGQ0NjEyOGEwNmRjNThiZGY4Y2ViOTUwOTE0MDQ0NGFhYjQzNjM4Nzc5NzYzOWM2MTExMTZlMjYxZjUwZTA2Y2Y0YmU3NmNkOWY5MmFlMzNkZjUzMmIyIiwic2Vxbm8iOjM5NTY4N30sInByZXYiOiJiY2I0ZDk2MWZkNTliMTUyMGZjNmYxZmE1NzIzODQyOTFlY2ViZGUyNGExMWY0NWYxMGYxOWU1NGM4ZGRmMjA5Iiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RABf567nGYkL43mwsC9sCUAdEbiWYE4vCkmPY8qo7FAO1oSIj6UjnqactaLCVXxNAHpCcCupwABwGfuLbodi6gBqhzaWdfdHlwZSCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jasonleibowitz
+
+==================================================================
