@@ -2118,9 +2118,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-"eslint-config-defaults@github:jasonleibowitz/eslint-config-defaults":
+"eslint-config-defaults@https://github.com/jasonleibowitz/eslint-config-defaults.git":
   version "1.0.0"
-  resolved "https://codeload.github.com/jasonleibowitz/eslint-config-defaults/tar.gz/31a03f12dccbab9235c9918fb4e9b2dfb66dcf8c"
+  resolved "https://github.com/jasonleibowitz/eslint-config-defaults.git#340f92f7c3264076e9e18736b2cc3652025c5585"
 
 eslint-config-standard-jsx@^3.0.0, eslint-config-standard-jsx@^3.3.0:
   version "3.3.0"

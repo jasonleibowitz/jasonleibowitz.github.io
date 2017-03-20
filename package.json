@@ -35,7 +35,7 @@
     "classnames": "^2.2.5",
     "css-loader": "^0.27.3",
     "eslint": "^3.17.1",
-    "eslint-config-defaults": "github:jasonleibowitz/eslint-config-defaults",
+    "eslint-config-defaults": "https://github.com/jasonleibowitz/eslint-config-defaults.git",
     "eslint-config-standard": "^7.0.1",
     "eslint-config-standard-jsx": "^3.3.0",
     "eslint-config-standard-react": "^4.3.0",
