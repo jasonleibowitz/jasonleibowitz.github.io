@@ -14,7 +14,7 @@ machine:
 #   override:
 #     - npm run build
 
-deployment:
+# deployment:
 #  prod:
 #    branch: master
 #    commands:
