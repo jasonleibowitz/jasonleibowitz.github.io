@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jasonleibowitz/jasonleibowitz.github.io#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gray-matter": "^4.0.2",
     "next": "^9.5.2",
     "react": "^16.13.1",

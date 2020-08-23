@@ -1,6 +1,49 @@
+@keyframes cursor {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   width: 100%;
   padding: 20px;
+  background-color: #fafafa;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    .mark {
+      margin-right: 5px;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.125rem;
+      background-color: #fe5186;
+      margin-left: 5px;
+      border-radius: 1px;
+      animation: cursor 1s infinite;
+    }
+  }
+
+  .links {
+    a {
+      margin: 0 12px;
+    }
+  }
 }

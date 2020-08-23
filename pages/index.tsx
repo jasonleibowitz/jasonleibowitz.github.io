@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
 
+import { SocialIcon } from 'components/SocialIcon';
+
 const avatarImageMap = {
   twitter: '/assets/images/avatar-twitter.png',
   github: '/assets/images/avatar-github.png',
@@ -11,6 +13,7 @@ const avatarImageMap = {
 
 export default function Home({ className }) {
   const [avatarImage, setAvatarImage] = useState(avatarImageMap.default);
+  const handleSetDefaultAvatar = () => setAvatarImage(avatarImageMap.default);
 
   return (
     <div className={className}>
@@ -22,14 +25,37 @@ export default function Home({ className }) {
       <main>
         <div className={styles.headShotSocialSection}>
           <img className={styles.avatar} src={avatarImage} />
-          <div className={styles.socialIconWrapper}>
-            <img className={styles.socialIcon} onMouseEnter={() => setAvatarImage(avatarImageMap.twitter)} onMouseLeave={() => setAvatarImage(avatarImageMap.default)} src="/assets/icons/twitter.svg" />
-            <img className={styles.socialIcon} onMouseEnter={() => setAvatarImage(avatarImageMap.github)} onMouseLeave={() => setAvatarImage(avatarImageMap.default)} src="/assets/icons/github.png" />
-            <img className={styles.socialIcon} onMouseEnter={() => setAvatarImage(avatarImageMap.linkedin)} onMouseLeave={() => setAvatarImage(avatarImageMap.default)} src="/assets/icons/linkedin.png" />
-          </div>
         </div>
         <h1>Jason Leibowitz</h1>
         <p>Hi! I build things for the web.</p>
+        <div className={styles.socialIconWrapper}>
+          <SocialIcon 
+            href="https://twitter.com/jasonleibowitz" 
+            icon='twitter'
+            handleMouseEnter={() => setAvatarImage(avatarImageMap.twitter)} 
+            handleMouseLeave={handleSetDefaultAvatar} 
+          />
+
+          <SocialIcon 
+            href="https://github.com/jasonleibowitz" 
+            icon='github'
+            handleMouseEnter={() => setAvatarImage(avatarImageMap.github)} 
+            handleMouseLeave={handleSetDefaultAvatar} 
+          />
+
+          <SocialIcon 
+            href="https://www.linkedin.com/in/jasonleibowitz/" 
+            icon='linkedin'
+            handleMouseEnter={() => setAvatarImage(avatarImageMap.linkedin)} 
+            handleMouseLeave={handleSetDefaultAvatar} 
+          />
+
+          <SocialIcon 
+            href="http://leibowitz.me" 
+            icon='resume'
+          />
+
+        </div>
       </main>
     </div>
   );

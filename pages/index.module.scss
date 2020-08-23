@@ -7,19 +7,11 @@
     width: 200px;
     border-radius: 50%;
   }
+}
 
   .socialIconWrapper {
     display: flex;
     flex-direction: row;
-    padding: 40px 0;
-
-    .socialIcon {
-      width: 35px;
-
-      &:not(:first-of-type) {
-        margin-left: 10px;
-      }
-    }
+    align-items: center;
+    justify-content: center;
   }
-
-}
