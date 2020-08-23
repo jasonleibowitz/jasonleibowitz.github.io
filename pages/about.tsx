@@ -1,9 +1,49 @@
 import classNames from 'classnames';
 import Head from 'next/head';
-import { Experience } from 'components/Experience';
+import { Experience, ExperienceProps } from 'components/Experience';
+import { SkillList } from 'components/SkillList';
 import { differenceInYears } from 'date-fns';
 
 import styles from './about.module.scss';
+
+const frontendSkills = ['TypeScript', 'React', 'Redux', 'Webpack', 'Jest', 'Cypress'];
+const backendSkills = ['Node', 'Python', 'Express', 'NestJS', 'MySQL', 'Postgres', 'MongoDB'];
+const infraSkills = ['Docker', 'Kubernetes', 'Jenkins', 'CircleCI', 'Ansible', 'NGINX'];
+const designSkills = ['Sketch', 'Zeplin', 'Figma', 'Photoshop'];
+
+const experiences: ExperienceProps[] = [
+  {
+    company: 'capsule',
+    roles: [{endDate: 'Present', role: 'Senior Software Engineer', startDate: "Dec '19"}],
+    title: 'Capsule Pharmacy'
+  },
+  {
+    company: 'invitae',
+    roles: [{endDate: "Dec '19", role: 'Senior Software Engineer', startDate: "Nov '18"}],
+    title: 'Invitae'
+  },
+  {
+    company: 'todaytix',
+    roles: [
+      {endDate: "Nov '18", role: 'Senior Software Engineer', startDate: "Mar '18"},
+      {endDate: "Mar '18", role: 'Software Engineer', startDate: "Jun '17"}
+    ],
+    title: 'TodayTix'
+  },
+  {
+    company: 'reserve',
+    roles: [{endDate: "Jun '17", role: 'Software Engineer', startDate: "Mar '16"}],
+    title: 'Reserve'
+  },
+  {
+    company: 'tigerspike',
+    roles: [
+      {endDate: "Mar '16", role: 'Software Engineer', startDate: "Aug '15"},
+      {endDate: "Aug '15", role: 'Associate Software Engineer', startDate: "Oct '14"}
+    ],
+    title: 'TigerSpike'
+  }
+]
 
 export default function About({ className }) {
   const yearsInNYC = differenceInYears(new Date(), new Date(2005, 7, 1));
@@ -20,116 +60,23 @@ export default function About({ className }) {
           <p>I graduated from <a href="https://www.nyu.edu/">New York University</a> with a degree in History and prior to my development career I spent a few years working in non-profit at <a href="https://www.jewishfederations.org/">The Jewish Federations of North America</a>.</p>
         </section>
 
-        <section>
+        <section className={styles.skills}>
           <h2>Skills</h2>
-          <div className={styles.skills}>
-            <div className={styles.skill}>
-              <h3>Frontend</h3>
-              <ul className={styles.list}>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Webpack</li>
-                <li>Jest</li>
-                <li>Cypress</li>
-              </ul>
-            </div>
-
-            <div className={styles.skill}>
-              <h3>Backend</h3>
-              <ul className={styles.list}>
-                <li>Node</li>
-                <li>Python</li>
-                <li>Express</li>
-                <li>NestJS</li>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
-
-            <div className={styles.skill}>
-              <h3>Infra</h3>
-              <ul className={styles.list}>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Jenkins</li>
-                <li>Ansible</li>
-                <li>NGINX</li>
-              </ul>
-            </div>
-
-            <div className={styles.skill}>
-              <h3>Design</h3>
-              <ul className={styles.list}>
-                <li>Sketch</li>
-                <li>Zeplin</li>
-                <li>Figma</li>
-                <li>Photoshop</li>
-              </ul>
-            </div>
-          </div>
+          <SkillList title="Frontend" skills={frontendSkills} />
+          <SkillList title="Backend" skills={backendSkills} />
+          <SkillList title="Infra" skills={infraSkills} />
+          <SkillList title="Design" skills={designSkills} />
         </section>
 
         <section className={styles.experience}>
           <h2>Experience</h2>
-          <Experience
-            company="capsule"
-            roles={[{
-              endDate: 'Present',
-              role: 'Senior Software Engineer',
-              startDate: "Dec '19"
-            }]}
-            title="Capsule Pharmacy"
-          />
-
-          <Experience
-            company="invitae"
-            roles={[{
-              endDate: "Dec '19",
-              role: 'Senior Software Engineer',
-              startDate: "Nov '18"
-            }]}
-            title="Invitae"
-          />
-
-          <Experience
-            company="todaytix"
-            roles={[{
-              endDate: "Nov '18",
-              role: 'Senior Software Engineer',
-              startDate: "Mar '18"
-            }, {
-              endDate: "Mar '18",
-              role: "Software Engineer",
-              startDate: "Jun '17"
-            }]}
-            title="TodayTix"
-          />
-
-          <Experience
-            company="reserve"
-            roles={[{
-              endDate: "Jun '17",
-              role: 'Software Engineer',
-              startDate: "Mar '16"
-            }]}
-            title="Reserve"
-          />
-
-          <Experience
-            company="tigerspike"
-            roles={[{
-              endDate: "Mar '16",
-              role: 'Software Engineer',
-              startDate: "Aug '15"
-            }, {
-              endDate: "Aug '15",
-              role: 'Associate Software Engineer',
-              startDate: "Oct '14"
-            }]}
-            title="TigerSpike"
-          />
+          {experiences.map(({ company, roles, title }) => (
+            <Experience
+              company={company}
+              roles={roles}
+              title={title}
+            />
+          ))}
 
         </section>
       </main>

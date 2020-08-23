@@ -5,18 +5,4 @@
 .skills {
   display: flex;
   justify-content: center;
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    flex-flow: 1;
-    padding: 20px;
-
-    .list {
-      list-style: none;
-      flex-grow: 1;
-      margin: 0;
-      padding: 0;
-    }
-  }
 }

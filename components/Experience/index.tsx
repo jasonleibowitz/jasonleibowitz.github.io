@@ -8,7 +8,7 @@ type Role = {
   startDate: string;
 }
 
-interface ExperienceProps {
+export interface ExperienceProps {
   company: Company;
   roles: Role[];
   title: string;

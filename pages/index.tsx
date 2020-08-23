@@ -52,7 +52,7 @@ export default function Home({ className }) {
           />
 
           <SocialIcon 
-            href="http://leibowitz.me" 
+            href="/assets/leibowitz_resume.pdf" 
             icon='resume'
           />
         </div>

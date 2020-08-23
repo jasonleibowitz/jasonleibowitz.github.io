@@ -9,7 +9,7 @@ export default function Header() {
       <Link href="/">
         <a className={styles.logo}>
           <span className={styles.mark}>></span>
-          <span>$ cd /home/</span>
+          <span>$ cd ~/home/</span>
           <span className={styles.cursor}></span>
         </a>
       </Link>
