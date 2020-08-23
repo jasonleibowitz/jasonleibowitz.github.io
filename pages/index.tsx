@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Head from 'next/head';
 import styles from './index.module.scss';
 
-import { SocialIcon } from 'components/SocialIcon';
+import { SocialIcon } from 'components';
 
 const avatarImageMap = {
   twitter: '/assets/images/avatar-twitter.png',

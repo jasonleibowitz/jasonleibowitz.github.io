@@ -1,49 +1,10 @@
 import classNames from 'classnames';
 import Head from 'next/head';
-import { Experience, ExperienceProps } from 'components/Experience';
-import { SkillList } from 'components/SkillList';
 import { differenceInYears } from 'date-fns';
 
+import { Experience, SkillList } from 'components';
+import { frontendSkills, backendSkills, infraSkills, designSkills, experiences } from 'data/personalInfo';
 import styles from './about.module.scss';
-
-const frontendSkills = ['TypeScript', 'React', 'Redux', 'Webpack', 'Jest', 'Cypress'];
-const backendSkills = ['Node', 'Python', 'Express', 'NestJS', 'MySQL', 'Postgres', 'MongoDB'];
-const infraSkills = ['Docker', 'Kubernetes', 'Jenkins', 'CircleCI', 'Ansible', 'NGINX'];
-const designSkills = ['Sketch', 'Zeplin', 'Figma', 'Photoshop'];
-
-const experiences: ExperienceProps[] = [
-  {
-    company: 'capsule',
-    roles: [{endDate: 'Present', role: 'Senior Software Engineer', startDate: "Dec '19"}],
-    title: 'Capsule Pharmacy'
-  },
-  {
-    company: 'invitae',
-    roles: [{endDate: "Dec '19", role: 'Senior Software Engineer', startDate: "Nov '18"}],
-    title: 'Invitae'
-  },
-  {
-    company: 'todaytix',
-    roles: [
-      {endDate: "Nov '18", role: 'Senior Software Engineer', startDate: "Mar '18"},
-      {endDate: "Mar '18", role: 'Software Engineer', startDate: "Jun '17"}
-    ],
-    title: 'TodayTix'
-  },
-  {
-    company: 'reserve',
-    roles: [{endDate: "Jun '17", role: 'Software Engineer', startDate: "Mar '16"}],
-    title: 'Reserve'
-  },
-  {
-    company: 'tigerspike',
-    roles: [
-      {endDate: "Mar '16", role: 'Software Engineer', startDate: "Aug '15"},
-      {endDate: "Aug '15", role: 'Associate Software Engineer', startDate: "Oct '14"}
-    ],
-    title: 'TigerSpike'
-  }
-]
 
 export default function About({ className }) {
   const yearsInNYC = differenceInYears(new Date(), new Date(2005, 7, 1));
