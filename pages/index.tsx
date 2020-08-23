@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import classNames from 'classnames';
 import Head from 'next/head';
 import styles from './index.module.scss';
 
@@ -16,13 +17,13 @@ export default function Home({ className }) {
   const handleSetDefaultAvatar = () => setAvatarImage(avatarImageMap.default);
 
   return (
-    <div className={className}>
+    <>
       <Head>
         <title>Jason Leibowitz's Portfolio Site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={classNames(className, styles.content)}>
         <div className={styles.headShotSocialSection}>
           <img className={styles.avatar} src={avatarImage} />
         </div>
@@ -54,9 +55,8 @@ export default function Home({ className }) {
             href="http://leibowitz.me" 
             icon='resume'
           />
-
         </div>
       </main>
-    </div>
+    </>
   );
 }

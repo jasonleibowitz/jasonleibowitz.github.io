@@ -1,3 +1,7 @@
+.content {
+  align-items: center;;
+}
+
 .headShotSocialSection {
   display: flex;
   flex-direction: column;
@@ -9,9 +13,9 @@
   }
 }
 
-  .socialIconWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+.socialIconWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

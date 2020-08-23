@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 export default function Header() {
 	return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Link href="/">
         <a className={styles.logo}>
           <span className={styles.mark}>></span>
@@ -19,6 +19,6 @@ export default function Header() {
         <NavLink href="/photos">Photos</NavLink>
         <NavLink href="/posts">Posts</NavLink>
       </div>
-    </div>
+    </header>
   );
 }
