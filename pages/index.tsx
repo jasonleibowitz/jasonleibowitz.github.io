@@ -4,6 +4,7 @@ import Head from 'next/head';
 import styles from './index.module.scss';
 
 import { SocialIcon } from 'components';
+import Typography from 'components/Typography';
 
 const avatarImageMap = {
   twitter: '/assets/images/avatar-twitter.png',
@@ -11,6 +12,8 @@ const avatarImageMap = {
   linkedin: '/assets/images/avatar-linkedin.png',
   default: '/assets/blog/authors/jason.jpg',
 }
+
+const { Title, Text } = Typography;
 
 export default function Home({ className }) {
   const [avatarImage, setAvatarImage] = useState(avatarImageMap.default);
@@ -27,8 +30,9 @@ export default function Home({ className }) {
         <div className={styles.headShotSocialSection}>
           <img className={styles.avatar} src={avatarImage} />
         </div>
+        <Title level={1}>Test Title</Title>
         <h1>Jason Leibowitz</h1>
-        <p>Hi! I build things for the web.</p>
+        <Text>Hi! I build things for the web.</Text>
         <div className={styles.socialIconWrapper}>
           <SocialIcon 
             href="https://twitter.com/jasonleibowitz" 
