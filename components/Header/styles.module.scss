@@ -1,0 +1,52 @@
+@import 'styles/_base.scss';
+
+@keyframes cursor {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2rem;
+  background-color: #fafafa;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.675rem;
+    font-weight: 700;
+    color: $black;
+
+    .mark {
+      margin-right: .5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 1rem;
+      height: 1.675rem;
+      background-color: $pink;
+      margin-left: .5rem;
+      border-radius: .1rem;
+      animation: cursor 1s infinite;
+    }
+  }
+
+  .links {
+    a {
+      margin: 0 1.2rem;
+    }
+  }
+}
