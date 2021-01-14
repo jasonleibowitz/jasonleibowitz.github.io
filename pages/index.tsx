@@ -22,7 +22,7 @@ export default function Home({ className }) {
   return (
     <>
       <Head>
-        <title>Jason Leibowitz's Portfolio Site</title>
+        <title>Jason Leibowitz - Software Engineer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -30,8 +30,8 @@ export default function Home({ className }) {
         <div className={styles.headShotSocialSection}>
           <img className={styles.avatar} src={avatarImage} />
         </div>
-        <Title level={1}>Test Title</Title>
-        <h1>Jason Leibowitz</h1>
+        <Title className={styles.name} level={1}>Jason Leibowitz</Title>
+        <Title className={styles.title} level={2}>Senior Software Engineer</Title>
         <Text>Hi! I build things for the web.</Text>
         <div className={styles.socialIconWrapper}>
           <SocialIcon 

@@ -1,10 +1,12 @@
 import { FunctionComponent } from 'react';
 import Typography from './Typography';
 
-interface TextProps {}
+interface TextProps {
+  className?: string;
+}
 
-export const Text: FunctionComponent<TextProps> = ({ ...rest }) => {
+export const Text: FunctionComponent<TextProps> = ({ className, ...rest }) => {
   return (
-    <Typography tag='p' {...rest} />
+    <Typography tag='p' className={className} {...rest} />
   );
 }

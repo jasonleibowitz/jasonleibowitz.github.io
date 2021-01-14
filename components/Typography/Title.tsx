@@ -6,9 +6,10 @@ const HEADER_LEVELS = tupleNum(1, 2, 3, 4);
 
 interface TitleProps {
   level: typeof HEADER_LEVELS[number];
+  className?: string;
 }
 
-export const Title: FunctionComponent<TitleProps> = ({ level = 1, ...rest }) => {
+export const Title: FunctionComponent<TitleProps> = ({ className, level = 1, ...rest }) => {
   let tag: keyof ReactHTML;
 
   if (HEADER_LEVELS.indexOf(level) !== -1) {
@@ -16,6 +17,6 @@ export const Title: FunctionComponent<TitleProps> = ({ level = 1, ...rest }) => 
   } 
 
   return (
-    <Typography tag={tag} {...rest} />
+    <Typography className={className} tag={tag} {...rest} />
   );
 }
