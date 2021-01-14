@@ -1,5 +1,8 @@
 import { FunctionComponent } from 'react';
+import { Typography } from '../Typography';
 import styles from './styles.module.scss';
+
+const { Title, Text } = Typography;
 
 type Company = 'capsule' | 'invitae' | 'reserve' | 'tigerspike' | 'todaytix';
 type Role = {
@@ -27,12 +30,12 @@ export const Experience: FunctionComponent<ExperienceProps> = ({ company, roles,
     <div className={styles.container}>
       <img className={styles.icon} src={`/assets/icons/${companyIconMap[company]}`} />
       <div className={styles.info}>
-        <h3>{title}</h3>
+        <Title className={styles.company} level={3}>{title}</Title>
         {roles.map(({ startDate, endDate, role }) => (
-          <p className={styles.role}>
+          <Text className={styles.role} key={role}>
             {role}
             <span>{startDate} - {endDate}</span>
-          </p>
+          </Text>
         ))}
       </div>
     </div>

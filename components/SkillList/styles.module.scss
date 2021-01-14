@@ -1,8 +1,9 @@
 .container {
   display: flex;
+  width: 25%;
   flex-direction: column;
   flex-flow: 1;
-  padding: 2rem 3rem;
+  padding: 0 2rem 3rem;
 
   .list {
     list-style: none;
@@ -12,6 +13,8 @@
 
     li {
       font-weight: 300;
+      font-size: 1.3rem;
+      line-height: 2rem;
       padding-bottom: .3rem;
     }
   }

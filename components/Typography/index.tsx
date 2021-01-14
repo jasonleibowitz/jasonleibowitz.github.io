@@ -11,4 +11,4 @@ const Typography = OriginTypography as TypographyProps;
 Typography.Title = Title;
 Typography.Text = Text;
 
-export default Typography;
+export {Typography};
