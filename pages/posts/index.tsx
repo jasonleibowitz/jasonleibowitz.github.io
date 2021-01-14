@@ -1,6 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { getAllPosts } from 'lib/api';
+import { Typography } from 'components';
+import { format } from 'date-fns';
+
+import styles from './index.module.scss';
+
+const { Title, Text } = Typography;
 
 export default function Home({ allPosts, className }) {
 
@@ -11,16 +17,16 @@ export default function Home({ allPosts, className }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={styles.content}>
         <div>
           {
           allPosts.map(post => {
             return (
               <Link as={`/posts/${post.slug}`} href={`/posts/${post.slug}`}>
-                <div>
-                  <h2>{post.title}</h2>
-                  <p>{post.date}</p>
-                  <p>{post.excerpt}</p>
+                <div className={styles.post}>
+                  <Title level={2}>{post.title}</Title>
+                  <Text className={styles.date}>{format(new Date(post.date), 'MMMM Mo, yyyy')}</Text>
+                  <Text>{post.excerpt}</Text>
                 </div>
               </Link>
             )

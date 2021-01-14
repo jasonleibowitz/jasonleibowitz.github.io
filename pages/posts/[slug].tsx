@@ -2,6 +2,10 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error'; 
 import { getPostBySlug, getAllPosts } from 'lib/api';
 import markdownToHtml from 'lib/markdownToHtml';
+import { Typography } from 'components'
+import { format } from 'date-fns';
+
+const { Title, Text } = Typography;
 
 export default function Post({ className, post, preview }) {
 	const router = useRouter();
@@ -15,9 +19,9 @@ export default function Post({ className, post, preview }) {
 				<h1>Loading...</h1>
 			) : (
 				<div className={className}>
-					<h1>{post.title}</h1>
-					<p>Author: {post.author.name}</p>
-					<p>Date: {post.date}</p>
+					<Title level={1}>{post.title}</Title>
+					<Text>Author: {post.author.name}</Text>
+					<Text>Date: {format(new Date(post.date), 'MMMM Mo, yyyy')}</Text>
 					<div dangerouslySetInnerHTML={{ __html: post.content }} />
 				</div>
 			)}

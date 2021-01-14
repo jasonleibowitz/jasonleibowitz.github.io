@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import { Link } from 'next/link';
 import { Typography } from '../Typography';
 import styles from './styles.module.scss';
 

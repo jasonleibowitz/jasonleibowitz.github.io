@@ -8,9 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className={styles.container}>
       <Header />
       <Component className={styles.content} {...pageProps} />
-      <footer>
-        <p>footer</p>
-      </footer>
     </div>
   );
 }
